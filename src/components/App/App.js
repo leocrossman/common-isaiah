@@ -10,7 +10,8 @@ import Auth from '../Auth/Auth'
 
 function App() {
   return (
-    <div>
+    <div className="App-header">
+      <h1>Hello</h1>
       <Auth></Auth>
     </div>
   );
