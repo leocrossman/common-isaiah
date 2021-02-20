@@ -1,7 +1,7 @@
 import './Auth.css';
 import withFirebaseAuth from 'react-with-firebase-auth'
 import firebase from 'firebase/app'
-
+import {Button} from '@material-ui/core'
 
 function Auth({user,
   signOut,
@@ -11,7 +11,8 @@ function Auth({user,
         {
           user 
             ? <p>Hello, {user.displayName}</p>
-            : <p>Please sign in.</p>
+            // : <p>Please sign in.</p>
+            : <Button>Please sign in.</Button>
         }
         {
           user
